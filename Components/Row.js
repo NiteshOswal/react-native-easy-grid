@@ -11,7 +11,7 @@ export default class RowNB extends Component {
 
         var type = {
         	flexDirection: 'row',
-        	flex: (this.props.size) ? this.props.size : (this.props.style && this.props.style.height) ? 0 : 1,
+        	flex: (this.props.size) ? parseInt(this.props.size) : (this.props.style && this.props.style.height) ? 0 : 1,
         }
 
         var defaultProps = {
